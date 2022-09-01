@@ -1,0 +1,26 @@
+{
+  "name": "crah-kin",
+  "version": "0.1.0",
+  "description": "crah-kin",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GitThePower/crah-kin.git"
+  },
+  "author": "Henry Power",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GitThePower/crah-kin/issues"
+  },
+  "homepage": "https://github.com/GitThePower/crah-kin#readme",
+  "devDependencies": {
+    "axios-mock-adapter": "^1.21.2",
+    "jest": "^29.0.1"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
