@@ -16,7 +16,21 @@ const getNonce = () => {
     return Date.now();
 };
 
+const handleResponse = (response) => {
+  const { data } = response;
+  if (!data) {
+    throw new Error(config.GET_TICKER_INFO_NO_DATA);
+  }
+
+  const { error, result } = data;
+  if (result) {
+    return result[Object.keys(result)[0]]
+  }
+  throw new Error(JSON.stringify(error));
+};
+
 module.exports = {
   getMessageSignature,
-  getNonce
+  getNonce,
+  handleResponse,
 };
